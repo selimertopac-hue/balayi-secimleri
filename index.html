@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Büyük Balayı Karar Dosyası 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Azeret+Mono:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary: #c2a37e;
+            --secondary: #1e293b;
+            --bg-cream: #fffaf1;
+            --accent: #d97706;
+            --text-dark: #334155;
+            --text-light: #64748b;
+        }
+
+        * { box-sizing: border-box; }
+        body { background-color: #0f172a; margin: 0; padding: 40px 0; display: flex; flex-direction: column; gap: 50px; align-items: center; }
+
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: var(--bg-cream);
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding: 50px 70px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+            font-family: 'Arimo', sans-serif;
+        }
+
+        .slide-container::before {
+            content: "";
+            position: absolute;
+            top: -120px;
+            right: -120px;
+            width: 450px;
+            height: 450px;
+            background: radial-gradient(circle, rgba(194, 163, 126, 0.08) 0%, transparent 70%);
+            z-index: 0;
+        }
+
+        .slide-container > * { z-index: 1; }
+
+        h1 { font-family: 'Playfair Display', serif; font-size: 72px; color: var(--secondary); margin: 0; line-height: 1.1; }
+        .slide-title { font-family: 'Playfair Display', serif; font-size: 38px; color: var(--secondary); margin-bottom: 25px; border-left: 6px solid var(--primary); padding-left: 20px; font-weight: 600; }
+        h3 { font-size: 26px; color: var(--primary); margin: 0 0 10px 0; font-weight: 700; }
+        p { font-size: 18px; color: var(--text-dark); line-height: 1.5; margin: 0 0 15px 0; }
+        .subtitle { font-family: 'Azeret Mono', monospace; font-size: 15px; color: var(--primary); text-transform: uppercase; letter-spacing: 2px; }
+
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; width: 100%; align-items: start; }
+        .content-area { flex-grow: 1; display: flex; flex-direction: column; justify-content: center; width: 100%; }
+
+        .main-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; width: 100%; }
+        .gal-img { height: 180px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .gal-img img { width: 100%; height: 100%; object-fit: cover; }
+        .gal-img.large { grid-column: span 3; height: 260px; }
+
+        .meta-card { background: white; padding: 20px; border-radius: 12px; border: 1px solid rgba(194,163,126,0.2); box-shadow: 0 4px 15px rgba(0,0,0,0.02); }
+        .price-tag { font-size: 42px; font-weight: 700; color: var(--accent); font-family: 'Playfair Display', serif; }
+        
+        .rating-box { display: flex; align-items: center; gap: 6px; margin-top: 15px; }
+        .rating-box i { font-size: 24px; color: #cbd5e1; cursor: pointer; transition: color 0.2s; }
+        .rating-box i.active, .rating-box i:hover { color: #eab308; }
+
+        .skor-table { width: 100%; border-collapse: collapse; margin-top: 10px; background: white; border-radius: 12px; overflow: hidden; }
+        .skor-table th { background: var(--secondary); color: white; padding: 12px 15px; text-align: left; font-size: 15px; }
+        .skor-table td { padding: 12px 15px; border-bottom: 1px solid #e2e8f0; font-size: 15px; color: var(--text-dark); }
+        .skor-table tr:hover { background: #fffcf7; }
+    </style>
+</head>
+<body>
+
+    <div class="slide-container" style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); justify-content: center; align-items: center; text-align: center;">
+        <p class="subtitle" style="color: var(--primary);">BÜYÜK KARAR DOSYASI</p>
+        <h1 style="color: white; font-size: 64px; margin: 20px 0;">2026 Balayı Tatil Rotaları</h1>
+        <p style="color: #94a3b8; font-size: 22px; max-width: 700px;">10 Muhteşem villa arasından hayalinizdeki balayını keşfedin ve interaktif puan tablosu ile kararınızı verin.</p>
+        <div style="width: 80px; height: 3px; background: var(--primary); margin-top: 40px;"></div>
+    </div>
+
+    <div class="slide-container">
+        <div class="subtitle">Seçenek #01</div>
+        <div class="slide-title">Kalkan Kızıltaş Otantik Manzaralı Villa</div>
+        <div class="content-area text-layout">
+            <div class="grid-2">
+                <div class="main-gallery">
+                    <div class="gal-img large"><img src="http://googleusercontent.com/image_collection/image_retrieval/16504368159908080308" alt="Manzara"></div>
+                    <div class="gal-img"><img src="http://googleusercontent.com/image_collection/image_retrieval/9187434544983283712" alt="Detay 1"></div>
+                    <div class="gal-img"><img src="http://googleusercontent.com/image_collection/image_retrieval/368413872427180738" alt="Detay 2"></div>
+                    <div class="gal-img"><img src="http://googleusercontent.com/image_collection/image_retrieval/9482939921641161450" alt="Detay 3"></div>
+                </div>
+                <div style="display:flex; flex-direction:column; gap:20px;">
+                    <div class="meta-card">
+                        <h3>Mekan Bilgisi & Mimari</h3>
+                        <p>Kalkan Kızıltaş mevkisinin üst yamaçlarında konumlanan villa, taş ve ahşabın ferforje sanatıyla birleşiminden doğan otantik bir mimariye sahip. Kesintisiz deniz ve gün batımı manzarası sunar.</p>
+                    </div>
+                    <div class="meta-card" style="background:#fffbeb;">
+                        <h3>Paket Detayı</h3>
+                        <div class="price-tag">74.843 ₺</div>
+                        <p style="margin:5px 0 0 0; font-family:'Azeret Mono'; font-size:14px; color:var(--text-light);">5 Gece (07.09.2026 - 12.09.2026)</p>
+                    </div>
+                    <div class="meta-card">
+                        <h3>Bu Rotayı Puanlayın:</h3>
+                        <div class="rating-box" data-id="1">
+                            <i class="fa-solid fa-star" data-val="1"></i><i class="fa-solid fa-star" data-val="2"></i><i class="fa-solid fa-star" data-val="3"></i><i class="fa-solid fa-star" data-val="4"></i><i class="fa-solid fa-star" data-val="5"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-container">
+        <div class="subtitle">Seçenek #02</div>
+        <div class="slide-title">Kalkan Havuzlu Lüks Romantik Özel Villa</div>
+        <div class="content-area text-layout">
+            <div class="grid-2">
+                <div class="main-gallery">
+                    <div class="gal-img large"><img src="http://googleusercontent.com/image_collection/image_retrieval/6bdb4033-818d-4116-b1db-0392ccd773f1" alt="Yatak Odası"></div>
+                    <div class="gal-img"><img src="http://googleusercontent.com/image_collection/image_retrieval/7e9e226c-2462-4ad6-84bc-a8069ac92398" alt="Salon"></div>
+                    <div class="gal-img"><img src="http://googleusercontent.com/image_collection/image_retrieval/99edbcd7-b7c0-4d6b-b1bf-d09ee4c07433" alt="Havuz"></div>
+                    <div class="gal-img"><img src="http://googleusercontent.com/image_collection/image_retrieval/b7470e46-cc6e-450f-b625-f9d555a06657" alt="Teras"></div>
+                </div>
+                <div style="display:flex; flex-direction:column; gap:20px;">
+                    <div class="meta-card">
+                        <h3>%100 Gizlilik & Fantastik Tasarım</h3>
+                        <p>Modern şıklığıyla öne çıkan bu fantastik yapıda, yatağın hemen dışında gömme bir iç havuz yer alır. Oda içinde özel bir Tantra koltuğu, jakuzi ve palmiye bahçesi bulunur. Havuz alanı dışarıdan tamamen görünmezdir.</p>
+                    </div>
+                    <div class="meta-card" style="background:#fffbeb;">
+                        <h3>Paket Detayı</h3>
+                        <div class="price-tag">67.359 ₺</div>
+                        <p style="margin:5px 0 0 0; font-family:'Azeret Mono'; font-size:14px; color:var(--text-light);">5 Gece (07.09.2026 - 12.09.2026)</p>
+                    </div>
+                    <div class="meta-card">
+                        <h3>Bu Rotayı Puanlayın:</h3>
+                        <div class="rating-box" data-id="2">
+                            <i class="fa-solid fa-star" data-val="1"></i><i class="fa-solid fa-star" data-val="2"></i><i class="fa-solid fa-star" data-val="3"></i><i class="fa-solid fa-star" data-val="4"></i><i class="fa-solid fa-star" data-val="5"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-container">
+        <div class="subtitle">Seçenek #03</div>
+        <div class="slide-title">Villa Flower Gedik - Orman Manzaralı</div>
+        <div class="content-area text-layout">
+            <div class="grid-2">
+                <div class="main-gallery">
+                    <div class="gal-img large"><img src="http://googleusercontent.com/image_collection/image_retrieval/085a434b-d703-466c-b7e3-11b5f20af6eb" alt="Gedik Havuz"></div>
+                    <div class="gal-img"><img src="http://googleusercontent.com/image_collection/image_retrieval/52256697-2223-4e5c-abff-c5c2706ca0d4" alt="Gedik Teras"></div>
+                    <div class="gal-img"><img src="http://googleusercontent.com/image_collection/image_retrieval/f80f5701-9d00-4ff2-9cdc-30ff6880c709" alt="Gedik İç"></div>
+                    <div class="gal-img"><img src="http://googleusercontent.com/image_collection/image_retrieval/0c57beb7-6570-422d-988b-f77001819485" alt="Gedik Mutfak"></div>
+                </div>
+                <div style="display:flex; flex-direction:column; gap:20px;">
+                    <div class="meta-card">
+                        <h3>Doğada Sessiz Bir Kaçamak</h3>
+                        <p>Doğada, tamamen kalabalıktan uzak ve sakin bir ortamda eşsiz bir tatil imkanı sunar. Ahşap tavan kirişleri ve rustik detaylarıyla bezeli iç mekanı, orman sessizliğiyle birleşerek huzurlu bir atmosfer yaratır.</p>
+                    </div>
+                    <div class="meta-card" style="background:#fffbeb;">
+                        <h3>Paket Detayı</h3>
+                        <div class="price-tag">46.203 ₺</div>
+                        <p style="margin:5px 0 0 0; font-family:'Azeret Mono'; font-size:14px; color:var(--text-light);">5 Gece (07.09.2026 - 12.09.2026)</p>
+                    </div>
+                    <div class="meta-card">
+                        <h3>Bu Rotayı Puanlayın:</h3>
+                        <div class="rating-box" data-id="3">
+                            <i class="fa-solid fa-star" data-val="1"></i><i class="fa-solid fa-star" data-val="2"></i><i class="fa-solid fa-star" data-val="3"></i><i class="fa-solid fa-star" data-val="4"></i><i class="fa-solid fa-star" data-val="5"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-container">
+        <div class="subtitle">Seçenek #04</div>
+        <div class="slide-title">Villa Flower Gökçe - Patara Merkez</div>
+        <div class="content-area text-layout">
+            <div class="grid-2">
+                <div class="main-gallery">
+                    <div class="gal-img large"><img src="http://googleusercontent.com/image_collection/image_retrieval/394b2774-9155-486b-b967-ed44353f050a" alt="Gökçe Dış"></div>
+                    <div class="gal-img"><img src="http://googleusercontent.com/image_collection/image_retrieval/1f5aa8f3-0894-4a87-bc18-16256eb89080" alt="Gökçe Oda"></div>
+                    <div class="gal-img"><img src="http://googleusercontent.com/image_collection/image_retrieval/54c60fc1-2865-4e3f-989c-b28713945cc9" alt="Gökçe Hamam"></div>
+                    <div class="gal-img"><img src="http://googleusercontent.com/image_collection/image_retrieval/6cbb3788-69de-4822-ab0b-3e463332f9d3" alt="Gökçe Teras"></div>
+                </div>
+                <div style="display:flex; flex-direction:column; gap:20px;">
+                    <div class="meta-card">
+                        <h3>Narenciye Bahçesi, Hamam & Sauna</h3>
+                        <p>Patara'nın merkezinde, limon ve portakal ağaçları arasında yer alan geniş bir bahçeye sahiptir. Açık planlı konforlu yaşam alanlarının yanı sıra villa bünyesinde özel hamam ve sauna da yer alır.</p>
+                    </div>
+                    <div class="meta-card" style="background:#fffbeb;">
+                        <h3>Paket Detayı</h3>
+                        <div class="price-tag">54.487 ₺</div>
+                        <p style="margin:5px 0 0 0; font-family:'Azeret Mono'; font-size:14px; color:var(--text-light);">5 Gece (07.09.2026 - 12.09.2026)</p>
+                    </div>
+                    <div class="meta-card">
+                        <h3>Bu Rotayı Puanlayın:</h3>
+                        <div class="rating-box" data-id="4">
+                            <i class="fa-solid fa-star" data-val="1"></i><i class="fa-solid fa-star" data-val="2"></i><i class="fa-solid fa-star" data-val="3"></i><i class="fa-solid fa-star" data-val="4"></i><i class="fa-solid fa-star" data-val="5"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-container">
+        <div class="subtitle">Seçenek #05</div>
+        <div class="slide-title">Villa Grand Sea Loft - Isıtmalı Havuzlu</div>
+        <div class="content-area text-layout">
+            <div class="grid-2">
+                <div class="main-gallery">
+                    <div class="gal-img large"><img src="http://googleusercontent.com/image_collection/image_retrieval/ecf246ba-7b2e-4ef9-8f13-f2af3daf6978" alt="Loft Deniz"></div>
+                    <div class="gal-img"><img src="http://googleusercontent.com/image_collection/image_retrieval/f645a959-8541-4477-9d04-d35e1f164b7f" alt="Loft Havuz"></div>
+                    <div class="gal-img"><img src="http://googleusercontent.com/image_collection/image_retrieval/f971db4e-1161-4ba7-a510-075048193c29" alt="Loft Teras"></div>
+                    <div class="gal-img"><img src="http://googleusercontent.com/image_collection/image_retrieval/2e0831a3-f76c-4fcf-a073-a5bda339e723" alt="Loft Oda"></div>
+                </div>
+                <div style="display:flex; flex-direction:column; gap:20px;">
+                    <div class="meta-card">
+                        <h3>Sonsuzluk Havuzu & Modern Loft Çizgiler</h3>
+                        <p>Gökyüzünün sonsuz mavisinin kesintisiz deniz manzarasıyla buluştuğu modern bir loft tasarım. Isıtmalı dış havuz seçeneği, sinema projeksiyon alanı ve jakuzili lüks süitiyle yüksek konfor vadeder.</p>
+                    </div>
+                    <div class="meta-card" style="background:#fffbeb;">
+                        <h3>Paket Detayı</h3>
+                        <div class="price-tag">71.147 ₺</div>
+                        <p style="margin:5px 0 0 0; font-family:'Azeret Mono'; font-size:14px; color:var(--text-light);">5 Gece (07.09.2026 - 12.09.2026)</p>
+                    </div>
+                    <div class="meta-card">
+                        <h3>Bu Rotayı Puanlayın:</h3>
+                        <div class="rating-box" data-id="5">
+                            <i class="fa-solid fa-star" data-val="1"></i><i class="fa-solid fa-star" data-val="2"></i><i class="fa-solid fa-star" data-val="3"></i><i class="fa-solid fa-star" data-val="4"></i><i class="fa-solid fa-star" data-val="5"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-container">
+        <div class="subtitle">Seçenek #06</div>
+        <div class="slide-title">Villa Hülüme - Üçgen Lüks Mimari</div>
+        <div class="content-area text-layout">
+            <div class="grid-2">
+                <div class="main-gallery">
+                    <div class="gal-img large"><img src="http://googleusercontent.com/image_collection/image_retrieval/1111df97-4c56-4a41-aa5d-11a1dc436821" alt="Hülüme Akşam"></div>
+                    <div class="gal-img"><img src="http://googleusercontent.com/image_collection/image_retrieval/7912ad84-813d-4bdd-895b-4cfc2ebeb309" alt="Hülüme Loft"></div>
+                    <div class="gal-img"><img src="http://googleusercontent.com/image_collection/image_retrieval/b6ea76cb-1763-4d39-a4f9-594ed3047d57" alt="Hülüme Salon"></div>
+                    <div class="gal-img"><img src="http://googleusercontent.com/image_collection/image_retrieval/def9dff4-0d14-4b0c-9f7f-dedcca66dcc8" alt="Hülüme Havuz"></div>
+                </div>
+                <div style="display:flex; flex-direction:column; gap:20px;">
+                    <div class="meta-card">
+                        <h3>A-Frame Tasarım & Patara Manzarası</h3>
+                        <p>Merkezi ve sakin bir konumda yer alan, sessiz doğa ile iç içe lüks bir A-Frame üçgen villa. Patara plajına kuşbakışı bakan muazzam cam cephesi, geniş korunaklı havuz terası ve taş şöminesi mevcuttur.</p>
+                    </div>
+                    <div class="meta-card" style="background:#fffbeb;">
+                        <h3>Paket Detayı</h3>
+                        <div class="price-tag">81.742 ₺</div>
+                        <p style="margin:5px 0 0 0; font-family:'Azeret Mono'; font-size:14px; color:var(--text-light);">5 Gece (07.09.2026 - 12.09.2026)</p>
+                    </div>
+                    <div class="meta-card">
+                        <h3>Bu Rotayı Puanlayın:</h3>
+                        <div class="rating-box" data-id="6">
+                            <i class="fa-solid fa-star" data-val="1"></i><i class="fa-solid fa-star" data-val="2"></i><i class="fa-solid fa-star" data-val="3"></i><i class="fa-solid fa-star" data-val="4"></i><i class="fa-solid fa-star" data-val="5"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-container">
+        <div class="subtitle">Seçenek #07</div>
+        <div class="slide-title">Villa İnziva Kaş - Doğa & Ada Manzarası</div>
+        <div class="content-area text-layout">
+            <div class="grid-2">
+                <div class="main-gallery">
+                    <div class="gal-img large"><img src="http://googleusercontent.com/image_collection/image_retrieval/0c02b780-4508-41b5-9927-a3e7583a3cb8" alt="İnziva Gece"></div>
+                    <div class="gal-img"><img src="http://googleusercontent.com/image_collection/image_retrieval/9e8036d6-66da-40c8-b2d4-65f6fff59842" alt="İnziva Barbekü"></div>
+                    <div class="gal-img"><img src="http://googleusercontent.com/image_collection/image_retrieval/98a2bd4b-e99d-44a7-96f0-baddc990d2e1" alt="İnziva Oda"></div>
+                    <div class="gal-img"><img src="http://googleusercontent.com/image_collection/image_retrieval/6768835f-8986-4e64-8344-0a0e3fd5f5b2" alt="İnziva Havuz"></div>
+                </div>
+                <div style="display:flex; flex-direction:column; gap:20px;">
+                    <div class="meta-card">
+                        <h3>Kaş'ta Muhafazakar & İzole Huzur</h3>
+                        <p>Kaş merkeze 13 km mesafede, tempoyu yavaşlatıp dinlenmek için tasarlanmış lüks bir taş villa. Muhteşem doğa, deniz ve ada manzarasına açılan korunaklı havuz alanı ve dış mekanda şık taş barbeküsü yer alır.</p>
+                    </div>
+                    <div class="meta-card" style="background:#fffbeb;">
+                        <h3>Paket Detayı</h3>
+                        <div class="price-tag">54.378 ₺</div>
+                        <p style="margin:5px 0 0 0; font-family:'Azeret Mono'; font-size:14px; color:var(--text-light);">5 Gece (07.09.2026 - 12.09.2026)</p>
+                    </div>
+                    <div class="meta-card">
+                        <h3>Bu Rotayı Puanlayın:</h3>
+                        <div class="rating-box" data-id="7">
+                            <i class="fa-solid fa-star" data-val="1"></i><i class="fa-solid fa-star" data-val="2"></i><i class="fa-solid fa-star" data-val="3"></i><i class="fa-solid fa-star" data-val="4"></i><i class="fa-solid fa-star" data-val="5"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-container">
+        <div class="subtitle">Seçenek #08</div>
+        <div class="slide-title">Villa Mabel - İslamlar Köyü Lüksü</div>
+        <div class="content-area text-layout">
+            <div class="grid-2">
+                <div class="main-gallery">
+                    <div class="gal-img large"><img src="http://googleusercontent.com/image_collection/image_retrieval/051ff34a-32a9-4d45-bbec-ef5143a84496" alt="Mabel Şelale"></div>
+                    <div class="gal-img"><img src="http://googleusercontent.com/image_collection/image_retrieval/303ef41e-cdf0-4104-aca7-82339b99fe92" alt="Mabel Teras"></div>
+                    <div class="gal-img"><img src="http://googleusercontent.com/image_collection/image_retrieval/3786dc11-14fc-459f-8607-21a539851ba8" alt="Mabel Salon"></div>
+                    <div class="gal-img"><img src="http://googleusercontent.com/image_collection/image_retrieval/2f1e23df-76be-4482-bf30-6975f90e43b7" alt="Mabel Oda"></div>
+                </div>
+                <div style="display:flex; flex-direction:column; gap:20px;">
+                    <div class="meta-card">
+                        <h3>Çift Süit, Jakuzi & Havuz Şelalesi</h3>
+                        <p>İslamlar köyünün merkezinde yer alan, lüks detaylarla dekore edilmiş elit bir mimari. Eşsiz deniz ve doğa manzarasına sahip havuz terasında özel yapım şelale, sığ havuz ve dış mekan ısıtması yer alır.</p>
+                    </div>
+                    <div class="meta-card" style="background:#fffbeb;">
+                        <h3>Paket Detayı</h3>
+                        <div class="price-tag">68.540 ₺</div>
+                        <p style="margin:5px 0 0 0; font-family:'Azeret Mono'; font-size:14px; color:var(--text-light);">5 Gece (07.09.2026 - 12.09.2026)</p>
+                    </div>
+                    <div class="meta-card">
+                        <h3>Bu Rotayı Puanlayın:</h3>
+                        <div class="rating-box" data-id="8">
+                            <i class="fa-solid fa-star" data-val="1"></i><i class="fa-solid fa-star" data-val="2"></i><i class="fa-solid fa-star" data-val="3"></i><i class="fa-solid fa-star" data-val="4"></i><i class="fa-solid fa-star" data-val="5"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-container">
+        <div class="subtitle">Seçenek #09</div>
+        <div class="slide-title">Villa Mocha - Kalkan (YENİ)</div>
+        <div class="content-area text-layout">
+            <div class="grid-2">
+                <div class="main-gallery">
+                    <div class="gal-img large"><img src="http://googleusercontent.com/image_collection/image_retrieval/46f71d27-2ab9-4cbf-84a8-45f1dc0a48a6" alt="Mocha Deniz"></div>
+                    <div class="gal-img"><img src="http://googleusercontent.com/image_collection/image_retrieval/50cbbe47-0735-411d-9684-112310e91cc5" alt="Mocha Akşam"></div>
+                    <div class="gal-img"><img src="http://googleusercontent.com/image_collection/image_retrieval/c70ad395-304b-4499-8de8-ac995f6376a8" alt="Mocha İç"></div>
+                    <div class="gal-img"><img src="http://googleusercontent.com/image_collection/image_retrieval/0ab8087d-bca1-4acb-9a9f-cdc1e15bec54" alt="Mocha Oda"></div>
+                </div>
+                <div style="display:flex; flex-direction:column; gap:20px;">
+                    <div class="meta-card">
+                        <h3>Yepyeni Yapı & Ahşap Çitli Koruma</h3>
+                        <p>Kalkan merkeze 3 km mesafede yer alan, tamamen yeni ve modern mobilyalarla döşenmiş bir balayı alternatifi. Geniş havuz terası ahşap çitlerle çevrilerek arkadaki villalardan tamamen izole edilmiştir.</p>
+                    </div>
+                    <div class="meta-card" style="background:#fffbeb;">
+                        <h3>Paket Detayı</h3>
+                        <div class="price-tag">84.759 ₺</div>
+                        <p style="margin:5px 0 0 0; font-family:'Azeret Mono'; font-size:14px; color:var(--text-light);">5 Gece (07.09.2026 - 12.09.2026)</p>
+                    </div>
+                    <div class="meta-card">
+                        <h3>Bu Rotayı Puanlayın:</h3>
+                        <div class="rating-box" data-id="9">
+                            <i class="fa-solid fa-star" data-val="1"></i><i class="fa-solid fa-star" data-val="2"></i><i class="fa-solid fa-star" data-val="3"></i><i class="fa-solid fa-star" data-val="4"></i><i class="fa-solid fa-star" data-val="5"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-container">
+        <div class="subtitle">Seçenek #10</div>
+        <div class="slide-title">Villa Robus Sun - Fethiye Kirme</div>
+        <div class="content-area text-layout">
+            <div class="grid-2">
+                <div class="main-gallery">
+                    <div class="gal-img large"><img src="http://googleusercontent.com/image_collection/image_retrieval/c720fdd8-153c-4c0d-9ede-0ba9dad3c382" alt="Robus Drone"></div>
+                    <div class="gal-img"><img src="http://googleusercontent.com/image_collection/image_retrieval/1239a500-fb38-4015-9080-30579346703d" alt="Robus Havuz"></div>
+                    <div class="gal-img"><img src="http://googleusercontent.com/image_collection/image_retrieval/a7261b33-b9be-4031-a78b-ccb1a5b1d6e0" alt="Robus Oda"></div>
+                    <div class="gal-img"><img src="http://googleusercontent.com/image_collection/image_retrieval/c8da53f0-229c-4887-9b9f-81487328fb5f" alt="Robus Günbatımı"></div>
+                </div>
+                <div style="display:flex; flex-direction:column; gap:20px;">
+                    <div class="meta-card">
+                        <h3>Likya Yolu Üzerinde Dağ ve Deniz</h3>
+                        <p>Fethiye Kirme bölgesinde yer alan Villa Robus Sun, dağın kalbinde lüks ve çağdaş bir kaçamak sunar. Ünlü Likya Yolu üzerindeki dağlık atmosferi, Ölüdeniz ve Faralya'ya olan yakınlığıyla benzersizdir.</p>
+                    </div>
+                    <div class="meta-card" style="background:#fffbeb;">
+                        <h3>Paket Detayı</h3>
+                        <div class="price-tag">56.132 ₺</div>
+                        <p style="margin:5px 0 0 0; font-family:'Azeret Mono'; font-size:14px; color:var(--text-light);">4 Gece (06.09.2026 - 10.09.2026)</p>
+                    </div>
+                    <div class="meta-card">
+                        <h3>Bu Rotayı Puanlayın:</h3>
+                        <div class="rating-box" data-id="10">
+                            <i class="fa-solid fa-star" data-val="1"></i><i class="fa-solid fa-star" data-val="2"></i><i class="fa-solid fa-star" data-val="3"></i><i class="fa-solid fa-star" data-val="4"></i><i class="fa-solid fa-star" data-val="5"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-container" style="background-color: #f8fafc;">
+        <div class="subtitle">BÜYÜK SEÇİM GÜNÜ</div>
+        <div class="slide-title">Karar Zamanı: Canlı Balayı Skor Tablosu</div>
+        <div class="content-area">
+            <p style="margin-bottom: 10px; font-weight: bold; color: var(--secondary);">Yukarıdaki slaytlarda verdiğiniz puanlara göre sıralama canlı güncellenir:</p>
+            <table class="skor-table">
+                <thead>
+                    <tr>
+                        <th>Sıra</th>
+                        <th>Villa Adı</th>
+                        <th>Konum</th>
+                        <th>Paket Fiyatı</th>
+                        <th>Sizin Puanınız</th>
+                    </tr>
+                </thead>
+                <tbody id="skorboard-body">
+                    <tr data-score-id="1"><td>1</td><td>Kalkan Kızıltaş Otantik Villa</td><td>Kalkan Kızıltaş</td><td>74.843 ₺</td><td class="score-cell" style="font-weight:700; color:var(--accent);">Oy Verilmedi</td></tr>
+                    <tr data-score-id="2"><td>2</td><td>Kalkan Havuzlu Lüks Romantik Villa</td><td>Kalkan Merkez</td><td>67.359 ₺</td><td class="score-cell" style="font-weight:700; color:var(--accent);">Oy Verilmedi</td></tr>
+                    <tr data-score-id="3"><td>3</td><td>Villa Flower Gedik (Orman)</td><td>Doğada / Orman</td><td>46.203 ₺</td><td class="score-cell" style="font-weight:700; color:var(--accent);">Oy Verilmedi</td></tr>
+                    <tr data-score-id="4"><td>4</td><td>Villa Flower Gökçe (Patara)</td><td>Patara Merkez</td><td>54.487 ₺</td><td class="score-cell" style="font-weight:700; color:var(--accent);">Oy Verilmedi</td></tr>
+                    <tr data-score-id="5"><td>5</td><td>Villa Grand Sea Loft (Isıtmalı)</td><td>Kalkan Merkez</td><td>71.147 ₺</td><td class="score-cell" style="font-weight:700; color:var(--accent);">Oy Verilmedi</td></tr>
+                    <tr data-score-id="6"><td>6</td><td>Villa Hülüme (Modern Üçgen)</td><td>Patara Yamaç</td><td>81.742 ₺</td><td class="score-cell" style="font-weight:700; color:var(--accent);">Oy Verilmedi</td></tr>
+                    <tr data-score-id="7"><td>7</td><td>Villa İnziva Kaş</td><td>Kaş Bölgesi</td><td>54.378 ₺</td><td class="score-cell" style="font-weight:700; color:var(--accent);">Oy Verilmedi</td></tr>
+                    <tr data-score-id="8"><td>8</td><td>Villa Mabel (İslamlar Köyü)</td><td>Kalkan İslamlar</td><td>68.540 ₺</td><td class="score-cell" style="font-weight:700; color:var(--accent);">Oy Verilmedi</td></tr>
+                    <tr data-score-id="9"><td>9</td><td>Villa Mocha (Yepyeni Yapı)</td><td>Kalkan Merkez</td><td>84.759 ₺</td><td class="score-cell" style="font-weight:700; color:var(--accent);">Oy Verilmedi</td></tr>
+                    <tr data-score-id="10"><td>10</td><td>Villa Robus Sun (Likya Yolu)</td><td>Fethiye Kirme</td><td>56.132 ₺</td><td class="score-cell" style="font-weight:700; color:var(--accent);">Oy Verilmedi</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const puanlar = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0 };
+
+        document.querySelectorAll('.rating-box i').forEach(star => {
+            star.addEventListener('click', function() {
+                const parent = this.parentElement;
+                const id = parent.getAttribute('data-id');
+                const val = parseInt(this.getAttribute('data-val'));
+                
+                puanlar[id] = val;
+
+                Array.from(parent.children).forEach(s => {
+                    const sVal = parseInt(s.getAttribute('data-val'));
+                    if(sVal <= val) {
+                        s.classList.add('active');
+                        s.style.color = '#eab308';
+                    } else {
+                        s.classList.remove('active');
+                        s.style.color = '#cbd5e1';
+                    }
+                });
+
+                updateScoreboard();
+            });
+        });
+
+        function updateScoreboard() {
+            const tbody = document.getElementById('skorboard-body');
+            const rows = Array.from(tbody.querySelectorAll('tr'));
+
+            rows.forEach(row => {
+                const id = row.getAttribute('data-score-id');
+                const pCell = row.querySelector('.score-cell');
+                if (puanlar[id] > 0) {
+                    pCell.innerHTML = "⭐ ".repeat(puanlar[id]) + ` (${puanlar[id]}/5)`;
+                    row.setAttribute('data-score-val', puanlar[id]);
+                } else {
+                    pCell.innerHTML = "Oy Verilmedi";
+                    row.setAttribute('data-score-val', 0);
+                }
+            });
+
+            rows.sort((a, b) => {
+                return parseInt(b.getAttribute('data-score-val')) - parseInt(a.getAttribute('data-score-val'));
+            });
+
+            tbody.innerHTML = "";
+            rows.forEach((row, index) => {
+                row.children[0].innerText = index + 1;
+                tbody.appendChild(row);
+            });
+        }
+    </script>
+</body>
+</html>
